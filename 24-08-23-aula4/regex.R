@@ -57,7 +57,7 @@ data_nascimento <- pdf[grepl("Data de nascimento:|Dt nasc:", pdf)]
 data_nascimento <- gsub("Data de nascimento:|Dt nasc:","", data_nascimento)
 
 
-# criando a base de dados
+# Criando a base de dados
 cadastro <- cbind(nome,apelido,data_nascimento, endereco, cep,telefone,cpf)
 cadastro <- as.data.frame(cadastro)
 
